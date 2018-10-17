@@ -35,3 +35,6 @@ Como complemento se creó un script que permite hacer uso de la app mediante un 
 Para hacer uso de esté script es necesario que el servidor esté levantado, ya sea manualmente o mediante docker.
 
 Una vez levantado el servidor se debe acceder a la carpeta *script* y ejecutar el comando `node client.js <texto>`con un texto a elección.
+
+## Git
+Para un buen manejo de versiones el proyecto está subido en https://github.com/NicoMechu/toolbox .
