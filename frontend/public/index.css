@@ -1,0 +1,63 @@
+
+body{
+    background: url('./fondo-principal.jpg');
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size:auto;
+}
+
+.body{
+    width: 60%;
+    min-width: 400px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.header{
+    height: 70px;
+}
+
+button.btn-primary{
+    border: #870000;
+    padding: 8px 30px;
+    margin: 15px;
+    background: #922c2c;
+    margin: 0;
+    height: 34px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+button.btn-primary:focus,
+button.btn-primary:active,
+button.btn-primary:visited,
+button.btn-primary:hover{
+    background: #cc7979;
+}
+
+.input-box{
+    display: inline-flex;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.form-group{
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.input-box .form-group .col-sm-10{
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 0;
+}
+
+.input-box .form-group .form-control {
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

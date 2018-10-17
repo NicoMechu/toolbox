@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+
+  server:
+
+      build: ./backend
+
+      environment:
+        SERVER_PORT: ${SERVER_PORT}
+
+      ports:
+        - ${SERVER_PORT}:${SERVER_PORT}
+
+      expose:
+        - ${SERVER_PORT}
+
+      volumes:
+        - ./backend:/toolbox/backend
+
+      command: npm start
+
+  client:
+
+      build: ./frontend
+
+      environment:
+        CLIENT_HOST: ${CLIENT_HOST}
+        CLIENT_PORT: ${CLIENT_PORT}
+
+      ports:
+        - ${CLIENT_PORT}:${CLIENT_PORT}
+
+      expose:
+        - ${CLIENT_PORT}
+        
+      links:
+        - server
+
+      volumes:
+        - ./frontend/src:/toolbox/frontend/src
+        - ./frontend/public:/toolbox/frontend/public
+
+      command: npm start
